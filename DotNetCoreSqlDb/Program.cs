@@ -12,7 +12,7 @@ builder.Services.AddDistributedMemoryCache();
 builder.Services.AddStackExchangeRedisCache(options =>
 {
 options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
-options.Instanc-eName = "SampleInstance";
+options.InstanceName = "SampleInstance";
 });
 
 // Add App Service logging
